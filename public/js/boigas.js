@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // UPDATE
-    const changeSleepBtns = document.querySelectorAll('.change-devoured');
+    const changeDevouredBtns = document.querySelectorAll('.change-devoured');
 
     // Set up the event listener for the create button
     if (changeDevouredBtns) {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             button.addEventListener('click', (e) => {
                 // Grabs the id fo the element that goes by the name "id"
                 const id = e.target.getAttribute('data-id');
-                const newSleep = e.target.getAttribute('data-newdevoured');
+                const newDevoured = e.target.getAttribute('data-newdevoured');
 
                 const newDevouredState = {
                     devoured: newDevoured,
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             // Grabs the value of the textarea that goes by the name, 'quote'
             const newBoiga = {              // HERE --> cats.js says 'ca' for id ? --> boig?
-                name: document.getElementById('ca').nodeValue.trim(),
+                name: document.getElementById('ca').value.trim(),
                 devoured: document.getElementById('devoured').checked,
             };
 

@@ -31,7 +31,6 @@ router.put('/api/boigas/:id', (req, res) => {
     boiga.update(
         {
             devored: req.body.devoured,
-
         },
         condition,
         (result) => {
@@ -53,7 +52,6 @@ router.delete('/api/boigas/:id', (req, res) => {
             return res.status(404).end();
         }
         res.status(200).end();
-        
     });
 });
 

@@ -9,7 +9,7 @@ const printQuestionMarks = (num) => {
         arr.push('?');
     }
     return arr.toString();
-}
+};
 
 // Helper function to convert object key/value pairs to SQL syntax
 const objToSql = (ob) => {
@@ -37,7 +37,7 @@ const objToSql = (ob) => {
 // Object for all our SQL statement fxns
 const orm = {
     all(tableInput, cb) {
-        const queryString = `SELECT * FROM ${table};`;
+        const queryString = `SELECT * FROM ${tableInput};`;
         connection.query(queryString, (err, result) => {
             if (err) {
                 throw err;
