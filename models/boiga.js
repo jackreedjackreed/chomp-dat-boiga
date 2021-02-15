@@ -1,3 +1,4 @@
+// Import the ORM to create functions that will interact with the database.
 const orm = require('../config/orm.js');
 
 const boiga = {
@@ -13,7 +14,7 @@ const boiga = {
     },
     delete(condition, cb) {
         orm.delete('boigas', condition, (res) => cb(res));
-    }
+    },
 
 }
 

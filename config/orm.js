@@ -99,5 +99,5 @@ const orm = {
     },
 };
 
-// Export the orm object for the model (burger.js)
+// Export the orm object for the model (boiga.js)
 module.exports = orm;

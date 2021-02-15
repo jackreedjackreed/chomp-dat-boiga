@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 // Import the model (boiga.js) to use its database fxns.
-const boiga = requrie('../models/boiga.js');
+const boiga = require('../models/boiga.js');
 
 // Create all our routes and set up logic within those routes where required
 router.get('/', (req, res) => {
@@ -56,4 +56,7 @@ router.delete('/api/boigas/:id', (req, res) => {
         
     });
 });
+
+// Export routes for server.js to use
+module.exports = router;
 
