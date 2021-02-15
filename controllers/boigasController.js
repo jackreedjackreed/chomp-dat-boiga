@@ -30,7 +30,7 @@ router.put('/api/boigas/:id', (req, res) => {
 
     boiga.update(
         {
-            devored: req.body.devoured,
+            devoured: req.body.devoured,
         },
         condition,
         (result) => {
