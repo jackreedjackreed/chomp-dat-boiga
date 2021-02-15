@@ -15,7 +15,7 @@
 <ul>
   {{#each boigas}}
   {{#if devoured}}
-  {{> boigas/boigas-block devoured=false}}
+  {{> boigas/boiga-block devoured=false}}
   {{/if}}
   {{/each}}
 </ul>
@@ -29,7 +29,7 @@
   </div>
 
   <div class="form-group">
-    <label for="devoured">Sleepy?</label><br>
+    <label for="devoured">Devoured?</label><br>
     <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured!<br>
     <input type="radio" name="devoured" value="0" id="notDevoured"> Not Devoured
   </div>
