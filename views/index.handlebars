@@ -1,0 +1,38 @@
+<h1>Boigas!</h1>
+
+<h2>Boigas that are not devoured!</h2>
+
+<ul>
+  {{#each boigas}}
+  {{#unless devoured}}
+  {{> boigas/boiga-block devoured=true}}
+  {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Boigas that are devoured!</h2>
+
+<ul>
+  {{#each boigas}}
+  {{#if devoured}}
+  {{> boigas/boigas-block devoured=false}}
+  {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Boiga</h2>
+<form id="create-form">
+
+  <div class="form-group">
+    <label for="ca">Boiga Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="devoured">Sleepy?</label><br>
+    <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured!<br>
+    <input type="radio" name="devoured" value="0" id="notDevoured"> Not Devoured
+  </div>
+
+  <button type="submit">Add Boiga</button>
+</form>
