@@ -17,4 +17,5 @@ const boiga = {
 
 }
 
+// / Export the database functions for the controller (boigasController.js).
 module.exports = boiga;
