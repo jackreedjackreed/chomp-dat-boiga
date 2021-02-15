@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/api/boigas', (req,res) => {
-    boiga.create(['buger_name', 'devoured'], [req.body.burger_name, req.body.devoured], (result) => {
+    boiga.create(['burger_name', 'devoured'], [req.body.burger_name, req.body.devoured], (result) => {
         // Send back the ID of the new quote
         res.json({ id: result.insertId });
     });
