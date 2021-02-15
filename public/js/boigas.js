@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             // Grabs the value of the textarea that goes by the name, 'quote'
             const newBoiga = {              // HERE --> cats.js says 'ca' for id ? --> boig?
-                name: document.getElementById('boiga').nodeValue.trim(),
+                name: document.getElementById('ca').nodeValue.trim(),
                 devoured: document.getElementById('devoured').checked,
             };
 
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             body: JSON.stringify(newBoiga),
         }).then(() => {
             // Empty the form           // another 'ca' HERE
-            document.getElementById('boiga').value = '';
+            document.getElementById('ca').value = '';
 
             // Reload the page so the user can see the new quote
             console.log('Created a new boiga!');
