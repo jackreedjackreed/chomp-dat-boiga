@@ -5,9 +5,10 @@ const connection = require('./connection.js');
 const printQuestionMarks = (num) => {
     const arr = [];
 
-    for (let i = 0; i<num; i++) {
+    for (let i = 0; i < num; i++) {
         arr.push('?');
     }
+
     return arr.toString();
 };
 
@@ -19,7 +20,7 @@ const objToSql = (ob) => {
     for (const key in ob) {
         let value = ob[key];
         // Check to skip hidden properties
-        if (Object.hasOwnProperty.call(ob,key)) {
+        if (Object.hasOwnProperty.call(ob, key)) {
             // If string with spaces, add quotations ('Lana Del Gray => 'Lana Del Gray')
             if (typeof value === 'string' && value.indexOf(' ') >= 0) {
                 value = `'${value}'`;
@@ -43,7 +44,7 @@ const orm = {
                 throw err;
             }
             cb(result);
-        })
+        });
     },
     create(table, cols, vals, cb) {
         let queryString = `INSERT INTO ${table}`;
@@ -65,7 +66,7 @@ const orm = {
             cb(result);
         });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
+    // An example of objColVals would be {name: Cheese Burger, Devoured: true}
     update(table, objColVals, condition, cb) {
         let queryString = `UPDATE ${table}`;
 
@@ -75,7 +76,7 @@ const orm = {
         queryString += condition;
 
         console.log(queryString);
-        connection.log(queryString);
+        // connection.log(queryString);
         connection.query(queryString, (err, result) => {
             if (err) {
                 throw err;
@@ -89,6 +90,7 @@ const orm = {
         queryString += ' WHERE ';
         queryString += condition;
 
+        console.log(queryString)
         connection.query(queryString, (err, result) => {
             if (err) {
                 throw err;
