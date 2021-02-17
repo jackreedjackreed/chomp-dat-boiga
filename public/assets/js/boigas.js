@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     // Check that the response is all good
                     // Reload the page so the user can see the new quote
                     if (response.ok) {
-                        console.log(`changed devoured to: ${newDevored}`);
+                        console.log(`changed devoured to: ${newDevoured}`);
                         location.reload('/');
                     } else {
                         alert('something went wrong :( ');
