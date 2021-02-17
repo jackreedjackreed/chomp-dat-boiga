@@ -51,12 +51,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         createBoigaBtn.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Grabs the value of the textarea that goes by the name, 'quote' (?)
-            const newBoiga = {              // HERE --> cats.js says 'ca' for id ? --> boig?
+            // Grabs the value of the textarea that goes by the name of burger_name
+            const newBoiga = {            
                 burger_name: document.getElementById('ca').value.trim(),
                 devoured: document.getElementById('devoured').checked,
             };
-            console.log(JSON.stringify(newBoiga))
 
         // Send POST requrest to create a new quote
         fetch('/api/boigas', {
@@ -69,10 +68,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             // make sure to serialize the JSON body
             body: JSON.stringify(newBoiga),
         }).then(() => {
-            // Empty the form           // another 'ca' HERE
+            // Empty the form        
             document.getElementById('ca').value = '';
 
-            // Reload the page so the user can see the new quote
+            // Reload the page so the user can see the new burger
             console.log('Created a new boiga!');
             location.reload();
         });
