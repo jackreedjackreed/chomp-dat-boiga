@@ -1,3 +1,5 @@
+// const { Console } = require("console");
+
 // Make sure we wait to attach our handlers until the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', (event) => {
     if (event) {
@@ -49,11 +51,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         createBoigaBtn.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Grabs the value of the textarea that goes by the name, 'quote'
+            // Grabs the value of the textarea that goes by the name, 'quote' (?)
             const newBoiga = {              // HERE --> cats.js says 'ca' for id ? --> boig?
-                name: document.getElementById('ca').value.trim(),
+                burger_name: document.getElementById('ca').value.trim(),
                 devoured: document.getElementById('devoured').checked,
             };
+            console.log(JSON.stringify(newBoiga))
 
         // Send POST requrest to create a new quote
         fetch('/api/boigas', {
