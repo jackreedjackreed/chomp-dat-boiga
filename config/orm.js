@@ -67,13 +67,14 @@ const orm = {
         });
     },
     // An example of objColVals would be {name: Cheese Burger, Devoured: true}
+    // objColVals --> what you're updating like name or title
     update(table, objColVals, condition, cb) {
         let queryString = `UPDATE ${table}`;
 
-        queryString += ' SET ';
-        queryString += objToSql(objColVals);
+        queryString += ' SET '; //
+        queryString += objToSql(objColVals); // ex. set devoured to true
         queryString += ' WHERE ';
-        queryString += condition;
+        queryString += condition;     // "find me the burger where id = 5"
 
         console.log(queryString);
         // connection.log(queryString);

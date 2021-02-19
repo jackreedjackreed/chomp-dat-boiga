@@ -20,6 +20,7 @@ router.post('/api/boigas', (req,res) => {
     boiga.create(['burger_name', 'devoured'], [req.body.burger_name, req.body.devoured], (result) => {
         // Send back the ID of the new quote
         res.json({ id: result.insertId });
+            // after creating a burger, return the id of that burger
     });
 });
 
@@ -30,9 +31,10 @@ router.put('/api/boigas/:id', (req, res) => {
 
     boiga.update(
         {
-            devoured: req.body.devoured,
+            devoured: req.body.devoured,  // set the devoured boolean to whatever the user supplies
+                                        // devoured value corresponds to the column value in the orm
         },
-        condition,
+        condition, // CONDITION (see orm) is the id, named as a const above
         (result) => {
             if (result.changedRows === 0) {
                 // if no rows were changed, then the ID must not exist --> throw 404
