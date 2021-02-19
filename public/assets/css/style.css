@@ -5,17 +5,19 @@
 .container {
   font-family: 'Sanchez', serif;
   color: black;
+  
 }
 
 
 #welcome {
   display: center;
-  background-color: rgba(193, 118, 69, 0.995);
+  background-color: rgba(232, 180, 145, 0.995);
   text-align: center;
+  padding-top: 30px;
 }
 
 #welcome h2 {
-  padding: 50px;
+  padding-top: 30px;
   font-size: 80px;
 }
 
@@ -53,34 +55,48 @@
 
 .options {
   display: inline;
-  text-align: justify;
   font-size: 20px;
+  padding-left: 5px;
 }
 
 #addBoiga button {
   margin: 10px;
+  font-size: 30px;
 }
 
-.boigaBox {
-  display: inline;
+#boigaBox {
+ border:rgb(255, 108, 82);
+ border-width: 4px;
+ display: inline-flex;
+ justify-content: center;
+ text-align: center;
+ padding-bottom:30px;
+ padding-top: 10px;
+ display: flex;
+justify-content: center;
+background-color:  rgba(232, 180, 145, 0.995);
 }
 
 
 
 #burgerImg {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   font-size: 100px;
-  width: 30%;
+  width: 20%;
 }
 
 
+#burgerLists {
+  text-align: center;
+}
 
 
 
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  list-style-type: none;
+  font-size: 20px;
 }
 
 .label {

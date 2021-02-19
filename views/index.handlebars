@@ -16,21 +16,26 @@
       </div>
 
       <div class="devoured" class="form-group">
-        <label  for="devoured">Devoured?</label><br>
+        <label  for="devoured">Devoured ?</label><br>
         <div class="options">
-          <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured!<br>
-          <input type="radio" name="devoured" value="0" id="notDevoured"> Not Devoured
+          <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured       
+          <input type="radio" name="devoured" value="0" id="notDevoured">        Not Devoured
         </div>
       </div>
 
       <button type="submit">Add Boiga</button>
     </form>
   </div>
+ <br>
+  <div class="container">
+    <h1>Your Boigas  <i class="fas fa-hamburger"></i></h1>
+    
+  </div>
+ <br>
 
-  <div class="container" class="boigaBox">
-    <h1>Boigas!</h1>
-    <div class="container">
-      <h2>Boigas that are not devoured!</h2>
+  <div class="container" id="boigaBox">
+    <div class="container" id="burgerLists">
+      <h2>Edible Boigas!</h2>
 
       <ul>
         {{#each boigas}}
@@ -41,9 +46,9 @@
       </ul>
     </div>
 
-    <div class="container">
+    <div class="container" id="burgerLists">
 
-      <h2>Boigas that are devoured!</h2>
+      <h2>Devoured Boigas!</h2>
 
       <ul>
         {{#each boigas}}
