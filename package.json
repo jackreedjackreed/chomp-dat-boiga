@@ -1,0 +1,29 @@
+{
+  "name": "chomp-dat-boiga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express-validator": "^6.9.2",
+    "express-handlebars": "^5.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackreedjackreed/chomp-dat-boiga.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackreedjackreed/chomp-dat-boiga/issues"
+  },
+  "homepage": "https://github.com/jackreedjackreed/chomp-dat-boiga#readme"
+}
