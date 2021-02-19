@@ -1,20 +1,104 @@
+.big {
+  background: #faebd7;
+}
+
+.container {
+  font-family: 'Sanchez', serif;
+  color: black;
+}
+
+
+#welcome {
+  display: center;
+  background-color: rgba(193, 118, 69, 0.995);
+  text-align: center;
+}
+
+#welcome h2 {
+  padding: 50px;
+  font-size: 80px;
+}
+
+#addBoiga {
+  display: center;
+  text-align: center;
+  background-color: rgb(255, 108, 82);
+  padding: 20px;
+}
+
+#addBoiga h2{
+  font-size: 50px
+}
+
+#addBoiga .form-group {
+  padding: 10px;
+  margin: 10px;
+}
+
+#addBoiga .form-group label {
+  display: inline-flex;
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+#addBoiga .form-group input {
+  padding-right: 15px
+}
+
+.devoured {
+  display: block;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.options {
+  display: inline;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#addBoiga button {
+  margin: 10px;
+}
+
+.boigaBox {
+  display: inline;
+}
+
+
+
+#burgerImg {
+  padding-bottom: 60px;
+  font-size: 100px;
+  width: 30%;
+}
+
+
+
+
+
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
-  
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+
+
+/* font-family: 'Fredoka One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sanchez', serif; */
