@@ -39,6 +39,10 @@
   
   If you have any questions, send them my way on github @jackreedjackreed or send an email to jackr353@mgmail.com.
 
+   ## Demo 
+
+  <img src="./public/assets/img/eat-dat-boiga.png" alt="screnshot of application">
+
   ## MIT License
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
