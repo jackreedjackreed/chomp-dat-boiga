@@ -4,6 +4,9 @@
   ## Description 
   
   An application built around MySQL access that allows users to input burgers of their choice and choose to devour them or render them edible. Users can also delete burgers from the database if they so choose. 
+  
+  ## Live Application
+  https://fathomless-shelf-09559.herokuapp.com/
 
   ## License 
 
@@ -35,12 +38,6 @@
   ## Questions 
   
   If you have any questions, send them my way on github @jackreedjackreed or send an email to jackr353@mgmail.com.
-
- ## Demo 
-
-<img src="./public/assets/img/eat-dat-boiga.png" alt="screnshot of application">
-
-[Live Demo] https://drive.google.com/file/d/1B04Ayfuc-XTxcV4zimooIkuD4p9aq8rY/view
 
   ## MIT License
 
