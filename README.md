@@ -1,5 +1,5 @@
 
-  # Team Profile Generator
+  # Chomp Dat Boiga
 
   ## Description 
   
